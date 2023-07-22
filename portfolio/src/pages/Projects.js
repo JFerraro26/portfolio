@@ -1,7 +1,9 @@
 function Projects() {
 	return (
-		<div className="flex-grow text-5xl col-span-7 text-center  xl:col-start-2 xl:col-span-5">
-			<h1>projects here</h1>
+		<div className="grid grid-cols-7">
+			<h1 className="col-start-1 col-span-7 text-center text-xl">
+				Projects
+			</h1>
 		</div>
 	);
 }
