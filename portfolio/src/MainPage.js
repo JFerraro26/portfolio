@@ -5,6 +5,8 @@ import ContactMe from "./pages/ContactMe";
 import Projects from "./pages/Projects";
 import { SiGithub } from "react-icons/si";
 import { GrLinkedin } from "react-icons/gr";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { motion, AnimatePresence } from "framer-motion";
 
 function MainPage() {
 	const [active, setActive] = useState("home");
@@ -63,19 +65,61 @@ function MainPage() {
 					>
 						Contact
 					</button>
+					<button
+						onClick={() =>
+							openInNewTab(
+								"https://docs.google.com/document/d/1xV_S7t6O3OinFtNyuIlko6yYttQUuTh0OIreo4XVGuw/edit?usp=sharing"
+							)
+						}
+						className="hover:text-red-300"
+					>
+						Resume
+					</button>
 				</div>
 				<div className="col-start-2 col-span-3">
-					<div className="flex justify-center">
+					<AnimatePresence>
 						{active === "home" ? (
-							<HomePage />
+							<motion.div
+								className="flex justify-center"
+								key="home"
+								initial={{ opacity: 0, scale: 0 }}
+								animate={{ opacity: 1, scale: 1 }}
+								transition={{ duration: 0.5 }}
+							>
+								<HomePage />
+							</motion.div>
 						) : active === "aboutMe" ? (
-							<AboutMe />
+							<motion.div
+								className="flex justify-center"
+								key="aboutMe"
+								initial={{ opacity: 0, rotateY: -180 }}
+								animate={{ opacity: 1, rotateY: 0 }}
+								transition={{ duration: 0.5 }}
+							>
+								<AboutMe />
+							</motion.div>
 						) : active === "projects" ? (
-							<Projects />
+							<motion.div
+								className="flex justify-center"
+								key="projects"
+								initial={{ opacity: 0, rotateY: -180 }}
+								animate={{ opacity: 1, rotateY: 0 }}
+								transition={{ duration: 0.5 }}
+							>
+								<Projects />
+							</motion.div>
 						) : active === "contact" ? (
-							<ContactMe />
+							<motion.div
+								className="flex justify-center"
+								key="contact"
+								initial={{ opacity: 0, rotateY: -180 }}
+								animate={{ opacity: 1, rotateY: 0 }}
+								transition={{ duration: 0.5 }}
+							>
+								<ContactMe />
+							</motion.div>
 						) : null}
-					</div>
+					</AnimatePresence>
 				</div>
 				<div className="col-start-5">
 					<div className="text-4xl flex justify-end gap-8 m-10">
@@ -97,6 +141,12 @@ function MainPage() {
 						>
 							<SiGithub />
 						</button>
+						<a
+							className="hover:border-red-300 border-transparent border-4 rounded-md"
+							href="mailto:ferraroj2626@gmail.com"
+						>
+							<MdOutlineMailOutline />
+						</a>
 					</div>
 				</div>
 			</div>

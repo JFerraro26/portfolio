@@ -3,7 +3,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 function HomePage() {
 	const [text] = useTypewriter({
 		words: [
-			"Full Stack Software Engineer",
+			"Full Stack Developer",
 			"Hack Reactor Graduate",
 			"Loyola University of Chicago Graduate",
 			"Python",
