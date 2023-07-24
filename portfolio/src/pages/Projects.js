@@ -1,3 +1,4 @@
+import React from "react";
 import { PiGithubLogoDuotone } from "react-icons/pi";
 function Projects() {
 	const openInNewTab = (url) => {
@@ -38,7 +39,7 @@ function Projects() {
 				<div className="w-80 h-80 flex justify-center items-center">
 					<img
 						className="border-2 border-red-500 rounded-xl shadow-2xl shadow-red-300"
-						src="/images/passPro.jpg"
+						src={process.env.PUBLIC_URL + "/images/passPro.jpg"}
 						alt="PassPro"
 					/>
 				</div>
