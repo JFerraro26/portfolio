@@ -3,7 +3,7 @@ import MainPage from "./MainPage";
 
 function App() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/portfolio">
 			<div>
 				<Routes>
 					<Route path="/" element={<MainPage />} />
