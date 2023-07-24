@@ -48,7 +48,10 @@ function Projects() {
 				<div className="w-80 h-80 flex justify-center items-center">
 					<img
 						className="border-2 border-red-500 rounded-xl shadow-2xl shadow-red-300"
-						src="/images/tableTopStoriesDetail.jpg"
+						src={
+							process.env.PUBLIC_URL +
+							"/images/tableTopStoriesDetail.jpg"
+						}
 						alt="TableTopStories"
 					/>
 				</div>
@@ -108,7 +111,7 @@ function Projects() {
 				<div className="w-80 h-80 flex justify-center items-center">
 					<img
 						className="border-2 border-red-500 rounded-xl shadow-2xl shadow-red-300"
-						src="/images/carCar.jpg"
+						src={process.env.PUBLIC_URL + "/images/carCar.jpg"}
 						alt="carCar"
 					/>
 				</div>
