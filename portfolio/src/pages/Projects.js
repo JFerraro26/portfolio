@@ -5,16 +5,20 @@ function Projects() {
 		window.open(url, "_blank", "noopener noreferrer");
 	};
 	return (
-		<div className="flex flex-col max-w-5xl my-14 gap-10 w-full text-lg">
-			<h1 className="font-bold text-4xl text-red-500 text-center">
+		<div className="flex flex-col my-6 max-w-5xl md:my-14 md:gap-10  md:text-lg">
+			<h1 className="font-bold text-lg md:text-4xl text-red-500 text-center">
 				Projects
 			</h1>
-			<div className="flex flex-row justify-between lg:justify-evenly lg:gap-10 w-full">
+			<div className="flex flex-col md:flex-row justify-between lg:justify-evenly lg:gap-10">
 				<div className="flex flex-col justify-center content-center items-center">
-					<h4 className="text-2xl font-semibold text-red-300">
+					<h4 className="text-md font-semibold text-red-300">
 						PassPro
 					</h4>
-					<h4>An independent ticket sales application</h4>
+					<div className="flex">
+						<h4 className="text-sm">
+							An independent ticket sales application
+						</h4>
+					</div>
 					<div className="flex justify-evenly w-full">
 						<ul className="list-disc ml-10">
 							<li>FastAPI</li>

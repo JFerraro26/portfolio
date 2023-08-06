@@ -90,8 +90,8 @@ function ContactMe() {
 		}
 	}, [submitted]);
 	return (
-		<div className="flex flex-col my-32 items-center text-lg max-w-5xl gap-4 w-full">
-			<h1 className="font-bold text-4xl text-red-500 text-center">
+		<div className="flex flex-col md:my-32 items-center md:text-lg md:max-w-5xl md:gap-4 w-full">
+			<h1 className="font-bold md:text-4xl text-red-500 text-center">
 				Contact
 			</h1>
 			<form
@@ -155,7 +155,7 @@ function ContactMe() {
 					/>
 				</div>
 				<div className="flex justify-end">
-					<button className="w-40 text-2xl border-2 border-blue-500 rounded-2xl hover:border-blue-300">
+					<button className="md:w-40 md:text-2xl border-2 border-blue-500 rounded-2xl hover:border-blue-300">
 						Submit
 					</button>
 				</div>
