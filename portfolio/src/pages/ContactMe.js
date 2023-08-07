@@ -40,7 +40,6 @@ function ContactMe() {
 
 	const handleSubmit = async (event) => {
 		event.preventDefault();
-
 		if (isEmail(email)) {
 			setEmailError(false);
 			if (isPhone(phone)) {
@@ -90,8 +89,8 @@ function ContactMe() {
 		}
 	}, [submitted]);
 	return (
-		<div className="flex flex-col md:my-32 items-center md:text-lg md:max-w-5xl md:gap-4 w-full">
-			<h1 className="font-bold md:text-4xl text-red-500 text-center">
+		<div className="flex flex-col items-center w-full my-4 text-sm sm:mt-20 sm:text-xl md:text-2xl lg:max-w-4xl">
+			<h1 className="font-bold text-red-500 text-lg text-center sm:text-4xl md:text-5xl lg:text-6xl">
 				Contact
 			</h1>
 			<form
@@ -155,7 +154,7 @@ function ContactMe() {
 					/>
 				</div>
 				<div className="flex justify-end">
-					<button className="md:w-40 md:text-2xl border-2 border-blue-500 rounded-2xl hover:border-blue-300">
+					<button className="mr-1 border-2 border-transparent py-1 px-2 rounded-2xl sm:hover:border-blue-500">
 						Submit
 					</button>
 				</div>

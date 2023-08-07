@@ -5,8 +5,8 @@ function Projects() {
 		window.open(url, "_blank", "noopener noreferrer");
 	};
 	return (
-		<div className="projects flex flex-col text-sm items-center my-4 sm:mt-24 sm:text-base md:text-xl lg:text-2xl xl:text-3xl xl:max-w-4xl">
-			<h1 className="font-bold text-lg text-red-500 text-center sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+		<div className="projects flex flex-col text-sm items-center my-4 sm:mt-20 sm:text-base md:text-xl lg:text-2xl xl:text-3xl xl:max-w-4xl">
+			<h1 className="font-bold text-lg text-red-500 text-center sm:text-4xl md:text-5xl lg:text-6xl">
 				Projects
 			</h1>
 			<div className="tabletop flex flex-col w-full sm:mt-2">

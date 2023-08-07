@@ -114,7 +114,7 @@ function MainPage() {
 					) : active === "resume" ? (
 						<motion.div
 							className="middle flex items-center justify-center h-full col-start-1 col-span-2 sm:col-start-2 sm:col-span-3"
-							key="contact"
+							key="resume"
 							initial={{ opacity: 0, rotateY: -180 }}
 							animate={{ opacity: 1, rotateY: 0 }}
 							transition={{ duration: 0.5 }}
@@ -132,7 +132,7 @@ function MainPage() {
 									"https://www.linkedin.com/in/jferraro26"
 								)
 							}
-							className="hover:border-red-300 border-transparent border-4 rounded-sm"
+							className="sm:hover:border-red-300 border-transparent border-4 rounded-sm"
 						>
 							<GrLinkedin />
 						</button>
@@ -140,12 +140,12 @@ function MainPage() {
 							onClick={() =>
 								openInNewTab("https://github.com/JFerraro26")
 							}
-							className="hover:border-red-300 border-transparent border-4 rounded-full"
+							className="sm:hover:border-red-300 border-transparent border-4 rounded-full"
 						>
 							<SiGithub />
 						</button>
 						<a
-							className="hover:border-red-300 border-transparent border-4 rounded-md"
+							className="sm:hover:border-red-300 border-transparent border-4 rounded-md"
 							href="mailto:ferraroj2626@gmail.com"
 						>
 							<MdOutlineMailOutline />
