@@ -132,7 +132,7 @@ function MainPage() {
 									"https://www.linkedin.com/in/jferraro26"
 								)
 							}
-							className="sm:hover:border-red-300 border-transparent border-4 rounded-sm"
+							className="sm:hover:text-red-300 border-transparent border-4 rounded-sm"
 						>
 							<GrLinkedin />
 						</button>
@@ -140,12 +140,12 @@ function MainPage() {
 							onClick={() =>
 								openInNewTab("https://github.com/JFerraro26")
 							}
-							className="sm:hover:border-red-300 border-transparent border-4 rounded-full"
+							className="sm:hover:text-red-300 border-transparent border-4 rounded-full"
 						>
 							<SiGithub />
 						</button>
 						<a
-							className="sm:hover:border-red-300 border-transparent border-4 rounded-md"
+							className="sm:hover:text-red-300 border-transparent border-4 rounded-md"
 							href="mailto:ferraroj2626@gmail.com"
 						>
 							<MdOutlineMailOutline />

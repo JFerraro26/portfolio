@@ -154,7 +154,7 @@ function ContactMe() {
 					/>
 				</div>
 				<div className="flex justify-end">
-					<button className="mr-1 border-2 border-transparent py-1 px-2 rounded-2xl sm:hover:border-blue-500">
+					<button className="mr-1 border-2 border-transparent py-1 px-2 rounded-2xl sm:hover:text-red-300">
 						Submit
 					</button>
 				</div>
