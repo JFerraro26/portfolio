@@ -3,14 +3,14 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 function HomePage() {
 	const [text] = useTypewriter({
 		words: [
-			"Full Stack Developer",
-			"Hack Reactor Graduate",
+			// "Full Stack Developer",
+			// "Hack Reactor Graduate",
 			"Loyola University of Chicago Graduate",
-			"Python",
-			"JavaScript",
+			// "Python",
+			// "JavaScript",
 			"React",
-			"Django",
-			"Redux Toolkit",
+			// "Django",
+			// "Redux Toolkit",
 		],
 		loop: false,
 		typeSpeed: 60,
@@ -18,12 +18,12 @@ function HomePage() {
 	});
 
 	return (
-		<div className="flex-grow p-2 h-full mt-4 md:mt-80">
+		<div className="mt-10 p-4 h-full">
 			<div className="flex flex-col items-center justify-center">
-				<h1 className="text-center text-xl md:text-7xl text-red-500">
+				<h1 className="text-center text-3xl text-red-500 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
 					Joseph Ferraro
 				</h1>
-				<div className="text-center md:text-4xl md:mt-6">
+				<div className="text-center mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
 					<span>{text}</span>
 					<Cursor cursorColor="red" />
 				</div>

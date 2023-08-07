@@ -1,7 +1,7 @@
 function AboutMe() {
 	return (
-		<div className="flex flex-col p-4 text-sm gap-3 md:my-14 md:text-lg md:max-w-5xl md:gap-4">
-			<h1 className="font-bold text-lg text-red-500 text-center md:text-4xl">
+		<div className="flex flex-col p-4 text-sm gap-3 sm:mt-20 md:text-base lg:text-lg lg:max-w-5xl">
+			<h1 className="font-bold text-lg text-red-500 text-center sm:text-3xl md:text-4xl lg:text-5xl">
 				About Me
 			</h1>
 			<p>
