@@ -3,14 +3,14 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 function HomePage() {
 	const [text] = useTypewriter({
 		words: [
-			// "Full Stack Developer",
-			// "Hack Reactor Graduate",
+			"Full Stack Developer",
+			"Hack Reactor Graduate",
 			"Loyola University of Chicago Graduate",
-			// "Python",
-			// "JavaScript",
+			"Python",
+			"JavaScript",
 			"React",
-			// "Django",
-			// "Redux Toolkit",
+			"Django",
+			"Redux Toolkit",
 		],
 		loop: false,
 		typeSpeed: 60,
